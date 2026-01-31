@@ -7,26 +7,37 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="bg-image">
-    <span><img src="akan.jpg" alt="akan-people"></span>
-  </div>
   <h1>Akan Name Generator✌</h1>
 
   <div class="container">
 
     <div class="inputting">
-      <label for="birth-year">Year of Birth</label>
+      <label for="YY">Year of Birth</label>
       <input type="text" id="year" placeholder="e.g. 1998" required>
     </div>
 
     <div class="inputting">
-      <label for="birth-date">Date of Birth</label>
-      <input type="date" id="date" placeholder="e.g. 29" required>
+      <label for="DD">Date of Birth</label>
+      <input type="dateofbirth" id="date" placeholder="e.g. 29" required>
     </div>
 
     <div class="inputting">
-      <label for="birth-month">Month of Birth</label>
-      <input type="month" name="month" id="month" placeholder="e.g. september" required>
+      <label for="MM">Month of Birth</label>
+      <select name="month" id="month">
+        <option value="january">January</option>
+        <option value="febuary">February</option>
+        <option value="march">March</option>
+        <option value="april">April</option>
+        <option value="may">May</option>
+        <option value="june">June</option>
+        <option value="july">July</option>
+        <option value="august">August</option>
+        <option value="september">September</option>
+        <option value="october">October</option>
+        <option value="november">November</option>
+        <option value="december">December</option>
+
+      </select>
     </div>
 
     <div class="inputting">
@@ -36,6 +47,11 @@
         <option value="Female">Female</option>
       </select>
     </div>
+
+    </div>
+
+    <div class="button">
+      <button onclick="generateAkanName()">Generate Your Akan Name</button>
     </div>
 </body>
 </html>
