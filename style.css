@@ -67,6 +67,11 @@ button:hover {
   transform: scale(1.05);
 }
 
+.result-container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .text-content h2 {
   font-size: 15px;
 }
@@ -108,3 +113,5 @@ th {
 tbody tr:not(:last-child) td {
   border-bottom: 1px solid rgba(255,255,255,0.15);
 }
+
+
