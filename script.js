@@ -4,7 +4,7 @@ const dateInput = document.getElementById("DD")
 const monthSelect = document.getElementById("MM")
 const genderSelect = document.getElementById("gender")
 const resultBox = document.getElementById("result-box")
-const akanName = document.getElementById("akan-name")
+const akanName = document.getElementById("akanname")
 
 function generateAkanName() {
   const year = parseInt(yearInput.value);
@@ -22,8 +22,6 @@ function generateAkanName() {
 
   const name = gender === "male" ? male[d] : female[d];
 
-  akanName.textContent = akanname;
-
   if (!YY) {
     alert("Please enter year of birth");
     return;
@@ -38,4 +36,8 @@ function generateAkanName() {
     alert("Please enter month of birth");
     return;
   }
+
+  akanName.innerText = name;
+
+  resultBox.classList.add('show')
 }
