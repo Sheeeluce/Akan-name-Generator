@@ -37,18 +37,19 @@ input, select {
   outline: none;
 }
 
-.button {
+button {
   width: 100%;
   border-radius: 10px;
   background: #464545;
   color: white;
   border: none;
   padding: 14px;
+  margin-top: 3%;
   cursor: pointer;
   transition: transform .2s ease;
 }
 
-.button:hover {
+button:hover {
   background: #000;
   transform: scale(1.05);
 }
