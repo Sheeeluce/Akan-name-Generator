@@ -20,7 +20,10 @@ function generateAkanName() {
   const male = ["Kwasi", "Kwado", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
   const female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
-  const name = gender === "male" ? male[d] : female[d];
+  const name = 
+  gender === "male" ? male[d] :
+  gender === "female" ? female[d]:
+  null;
 
   if (!YY) {
     alert("Please enter year of birth");
